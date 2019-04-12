@@ -43,6 +43,15 @@ public class ImgRecyclerViewAdapter extends RecyclerView.Adapter<ImgRecyclerView
     }
 
 
+    @Override
+    public int getItemViewType(int position) {
+        int index = 1;
+        if ((position + 1) % 3 == 1) {
+            index = 2;
+        }
+        return index;
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView image;
 
