@@ -33,6 +33,9 @@ public class ImgRecyclerViewAdapter extends RecyclerView.Adapter<ImgRecyclerView
     public void onBindViewHolder(final ViewHolder holder, int position) {
         Glide.with(this.context)
                 .load(this.urls.get(position))
+                .override(400, 400)
+                .centerCrop()
+                .placeholder(R.mipmap.ic_launcher)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.getImage());
     }
