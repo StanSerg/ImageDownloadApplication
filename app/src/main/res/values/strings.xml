@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">ImageDownloadApplication</string>
+    <string name="app_name">r/EarthPorn</string>
+    <string name="button_top">top</string>
+    <string name="button_new">new</string>
+    <string name="information">information</string>
 </resources>
